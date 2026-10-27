@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Аяулым, саған бір ұсынысым бар ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&family=Noto+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<button id="music" class="music" type="button" aria-pressed="false">
+  <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+  <span class="label">Музыканы қосу</span>
+</button>
+
+<main class="stage">
+  <div class="heart" aria-hidden="true">
+    <svg viewBox="-4 -4 108 98" width="100%" height="100%">
+      <defs>
+        <linearGradient id="hs" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#ff8aa1"/><stop offset="1" stop-color="#e11d48"/>
+        </linearGradient>
+        <linearGradient id="hf" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#ff3b64"/><stop offset="1" stop-color="#9f1239"/>
+        </linearGradient>
+      </defs>
+      <path pathLength="1" d="M50 85 C20 62 4 44 4 27 C4 13 15 4 28 4 C38 4 46 9 50 17 C54 9 62 4 72 4 C85 4 96 13 96 27 C96 44 80 62 50 85 Z"
+            fill="url(#hf)" stroke="url(#hs)" stroke-width="2.4" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <section id="ask" class="ask">
+    <h1 class="rise" style="--d:1.5s">Аяулым, саған бір ұсынысым бар ❤️</h1>
+    <p class="sub rise" style="--d:2.2s">Осы жексенбіде менімен бірге киноға барасың ба? 🎬🍿</p>
+    <div class="actions rise" style="--d:2.9s">
+      <button id="yes" class="btn btn-yes" type="button">❤️ Иә, барамын!</button>
+      <button id="maybe" class="btn btn-maybe" type="button">🙈 Ойланып көрейін</button>
+    </div>
+    <p id="maybeNote" class="maybe-note" aria-live="polite"></p>
+  </section>
+
+  <section id="reply" class="reply" hidden aria-live="polite">
+    <h2>Онда бұл кездесуімізді ұмытылмастай етейік, Аяулым ❤️</h2>
+  </section>
+
+  <p class="date rise" style="--d:3.4s">Кездесуіміз: жексенбі, Алматы қаласы 🎬</p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
